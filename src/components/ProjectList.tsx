@@ -15,12 +15,12 @@ const ProjectList = () => {
       {projectData?.map((item: ProjectItem, index: number) => (
         <div
           key={index}
-          className="mx-auto flex h-screen w-[50vw] items-center justify-center"
+          className="mx-4 my-4 flex items-center justify-center md:mx-auto md:my-0 md:h-screen md:w-[50vw]"
         >
-          <div className="grid h-2/4 w-full grid-cols-2 items-center gap-8 rounded-3xl bg-white p-8 shadow-custom-shadow">
+          <div className="grid h-2/4 w-full grid-cols-1 items-center gap-8 rounded-3xl bg-white p-8 shadow-custom-shadow md:grid-cols-2">
             <Image src={item.image} alt="test" width={542} height={420} />
             <div className="flex w-full flex-col items-start justify-start gap-4">
-              <h6 className="font-pompiere text-4xl text-[#f358a8]">
+              <h6 className="font-pompiere text-3xl text-[#f358a8] md:text-4xl">
                 {item.title}
               </h6>
               <p className="text-base">{item.description} </p>

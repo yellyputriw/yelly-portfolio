@@ -2,11 +2,11 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import LinePattern from "@/app/assets/line.svg";
 import ProjectList from "./ProjectList";
 
-const Project = () => {
+function Project() {
   const sectionRef = useRef(null);
   const triggerRef = useRef(null);
 
@@ -74,6 +74,6 @@ const Project = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Project;
